@@ -1,0 +1,111 @@
+# CRIAR USUARIO JSON
+{
+    "username": "teste",
+    "nome": "nome teste",
+    "senha": "teste",
+    "ativo": true,
+    "treinos": [
+        {
+            "id": 1,
+            "nome": "Treino A",
+            "exercicios": [
+                {
+                    "id": 1,
+                    "nome": "Squat",
+                    "grupoMuscular": "Legs",
+                    "imgUrl": "squat.jpg"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Treino B",
+            "exercicios": [
+                {
+                    "id": 2,
+                    "nome": "Bench Press",
+                    "grupoMuscular": "Chest",
+                    "imgUrl": "bench_press.jpg"
+                }
+            ]
+        }
+    ],
+    "roles": [
+        {
+            "role": "ROLE_USER"
+        }
+    ]
+}
+## USUARIO COM ADMIN
+{
+    "username": "admin",
+    "nome": "nome admin",
+    "senha": "admin",
+    "ativo": true,
+    "treinos": [
+        {
+            "id": 1,
+            "nome": "Treino A",
+            "exercicios": [
+                {
+                    "id": 1,
+                    "nome": "Squat",
+                    "grupoMuscular": "Legs",
+                    "imgUrl": "squat.jpg"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Treino B",
+            "exercicios": [
+                {
+                    "id": 2,
+                    "nome": "Bench Press",
+                    "grupoMuscular": "Chest",
+                    "imgUrl": "bench_press.jpg"
+                }
+            ]
+        }
+    ],
+    "roles": [
+        {
+            "role": "ROLE_USER"
+        },
+        {
+            "role": "ROLE_ADMIN"
+        }
+    ]
+}
+----------------------------------------------------------------
+
+# Para criar Treino com Exercicio
+{
+    "nome": "Treino D",
+    "exercicios": [
+        {
+            "nome": "Exercicio 1",
+			"grupoMuscular": "Perna",
+			"imgUrl": "p.jpg"
+        },
+        {
+            "nome": "Exercicio 2"
+			"grupoMuscular": "Braço",
+			"imgUrl": "b.jpg"
+        }
+    ]
+}
+
+# Para criar apenas Treino
+{
+    "nome": "Treino E",
+    "exercicios": []
+}
+----------------------------------------------------------------
+
+# Para criar apenas exercicios
+{
+    "nome": "Pulos",
+    "grupoMuscular": "Perna",
+    "imgUrl": "Perna.jpg"
+}
